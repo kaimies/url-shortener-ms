@@ -10,7 +10,7 @@
     "url": "git@github.com:kaimies/url-shortener-ms.git"
   },
   "scripts": {
-    "start": "babel-node src/index.js",
+    "start": "./node_moduls/.bin/babel-node ./src/index.js",
     "build": "babel src -d dist",
     "serve": "node dist/index.js",
     "lint": "esw src --color",
