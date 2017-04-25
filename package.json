@@ -1,16 +1,16 @@
 {
-  "name": "dev-env",
+  "name": "url-shortener-ms",
   "version": "0.1.0",
   "main": "src/index.js",
   "author": "Kai Mies <develop@regnavi.de>",
   "license": "MIT",
-  "description": "Basic JavaScript Development Environment",
+  "description": "Url Shortener Microservice",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kaimies/js-simple-dev-env.git"
+    "url": "git@github.com:kaimies/url-shortener-ms.git"
   },
   "scripts": {
-    "start": "nodemon src/index.js --exec babel-node",
+    "start": "babel-node src/index.js",
     "build": "babel src -d dist",
     "serve": "node dist/index.js",
     "lint": "esw src --color",
@@ -36,5 +36,10 @@
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
     "nsp": "^2.6.3"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26",
+    "shortid": "^2.2.8"
   }
 }
